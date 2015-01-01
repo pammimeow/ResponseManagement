@@ -1,0 +1,7 @@
+eror fixing:
+1. if no values in select box and field saved. 
+2. menu should disappear as clicked on. 
+3. link to delete the recently added field in the fields display. 
+4. text fields are charecters by default and other 
+type. 
+5. field name cannot be emoty. 

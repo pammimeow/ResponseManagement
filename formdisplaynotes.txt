@@ -1,0 +1,12 @@
+1. every field wil have icon if there are regular expressions set there. 
+2. essential and unique icons to be set. 
+3. theme color and logo and and comp name to be set. If none then defaul to be set. 
+4. chek for regular exp and cretae a good list of errors . 
+5. pass the respinse only if regular exp and all other checks are cleared. 
+6. at the bottom give a link which connects to users web page if given in the credentials. 
+7. reg exp storage
+8. an email back field id an error is detected. email goes to the owner of form. 
+9. after the form is submitted without any mistake. Provide user with the response id and user will be emailed the response id in any case. if asked to email using resspomse then with that send it. 
+
+things to handle here:
+1. file upload .. so has to be done there. 

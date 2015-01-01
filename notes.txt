@@ -1,0 +1,244 @@
+Project Notes:
+stopped at reponse.php to resume from there. 
+
+
+Now: 
+1. makes the view responses working. 
+2. Make it possible to add files as well to the response. 
+3. click on a response line to open its details in a page. 
+4. make the responses sortable( search for sort functions ). 
+5. make the responses searchable based on all the fields entered. (1. one basic search which will search everything and put forth the short list.
+ 2. Advanced search, which will produce all the options except files for searching and can search from there to produce list of responses).
+ 3. Ability to delete reponses check marked. 
+ 4. ability to group responses in their special folders for later review. 
+
+
+
+On the first page:
+1. some description. 
+2. three links which will describe the steps of the form creation, details shown in above desc box. 
+3. other faqs as accordion at the end. 
+4. followed by footer. 
+
+
+
+// day 2 :
+1. accept only .jpg png and gif formats. (message to be displayed)
+2. Tick image appears whenever a value is aded to select box or relevant.
+3. Store the values somewhere may be in the dataset and when the form is submitted retrieve from there. 
+4. add a message field where all the errors made on the form should be displayed. 
+
+CHANGES TO BE MADE:
+ADD AN EDIT BUTTON FOR CHK BOX RADIO AND SELS SO THAT OPTIONS CAN BE EDITED AND DELETED FROM THERE.
+
+cancel form should delete all the data of the current form for the user.
+
+on the left hand side should be able to see all the user forms and on click should be able to see the form. 
+
+when form has not been saved and other form is clicked , ask user to save the form first. 
+
+All the forms will have the same layout as the form created, just one link for a new form would be there.  
+
+should not be able to add fields without a proper form name. 
+option to edit form name. 
+option to delete forms.
+on delete should confirm. 
+
+cancel form on the new form page and delete form on existing form. 
+delete option also on the left bar. 
+
+
+New updates:
+1. do the deletion part of the flds(modal)
+2. check boxes and addition of multiple deletes and invisible. 
+3. create links for the inidividual forms. 
+4. delete links for forms as well. 
+5. controls should not be accessible when they cannot produce right output. 
+6. add view responses and visit link as well. 
+
+Editing fields :
+with form name provide two buttons :
+1. all company name and tag, etc options. (global setting also)
+2. optin for changing colors and theme for the form.  (global setting also)
+option to edit field names and all the options as well. 
+
+select box - option to add numbers 
+option to specify range. 
+select box also option of ading names of countries. 
+
+build on male female template. 
+build a text box field which can include big message too. 
+
+ask the user to enter companys name, tagline or logo if needed for the form display. 
+- create a new section in the forms listing area called user info which includes 
+   - company name
+   - tagline
+   - logo
+
+- every form will have these displayed on the right of the form name and with form name even these values should be editable for every form. 
+
+- add a value while adding checkboxes which makes the added option as the default option. Default should be editable later on. Its not mandatory to have a default option always. But if no default is created then make the first option as default option, helps save the checking time when form is submitted for essential fields. 
+
+- image , can select which formats to supports. give a listing down.with all option. display checkboxes of all images types. Which ever are selected will be supported by image upload. 
+- documents- which formats to support and all option.
+-video - again give a listing of video types supported. 
+- add textarea for notes or bigger descriptions. (limit text size)
+
+- theme for the form colors also can be chosen (optional) choose three colors from the color picker and use them in the form. 
+  - use fonts from the font picker and use them. 
+- add regular expressions to check if input is as expected in form create form. 
+
+- add a unique constraint to a form field.
+
+- help options available for every field name and every section as well.  
+
+
+- within responses: functionality to email to the user who has replied directly. 
+- select box - make an option to upload a file from where options for sel box can be loaded. Format of file to be specified. 
+
+- at the time of user creation, make a folder in the user uploads where the files uploaded for the user can be stored. 
+
+Responses page:
+1. show all the responses in a tabular format. Use absoulute and relative positioning to position all the fields so that any number of field values could be accomodated. 
+2. provide a personal view of a response where the response can be individually seen. 
+3. provide search functions :
+   search - advanced search options presented based upon the type of fields in the form. 
+4. ability to form groups in the responses. one link on top which will expand all the groups. click on each group to see the group responses. 
+5. All responses option for going back.
+6. search functions available in group responses as well. 
+
+- search field on top of the field header itself so that search text can be typed there itself. 
+- as values are typed in the field they should be automatically updated in the results. Every search query should be added and total search result should be displayed. 
+- cancelling a search query would delete the search option. 
+- an option to inverse the selection and delete whatever is selected. 
+- searched values can also be grouped or an option to go out of search mode. 
+
+- email address should be a mandatory field so that the user can be contacted back using the system. 
+- send email option should present a dialog to send the email. on email an option to send the email response page should be given, click on which should take to email resp page for a form and this response will automatically get addes to the replies. 
+This email resp page will give user an option to send the same copy of reply to his mailbox for reference.
+this response email page will hold reference to which sent message it connects with. All the replies to that will be added to this sent message.  
+extra ops are:
+1. send email. (files could be attached).
+2. viewing replies of the user. ( shows sent and recieved message)
+( two options here ,  3. delete reply 4. view history of messages(the form reply fields)).
+   ( do not give an option to send reply from a reply, it will create a chain of messages and we want messages to be displayed as sent and recievd form).
+
+in the responses table, the email responses should be highlighted in a different way, click on which will open the email and its response. Which can be deleted from here. (viewed and deleted). 
+
+click on one line of resp.. open it 
+option to email.
+option to delete.
+option to add in group. 
+
+
+4. An option of seeing all the replies as a mailbox together. 
+5. normal search functionality on that and then user can see the history of the reply. (which response it is connected to)
+
+- all the replies wil be added as a new field. 
+
+
+- inverse option will be available only when something is searched, same for delete and group. 
+
+- provide help for all of 
+
+summary of reponses page:
+1. search field on top of all fields. 
+2. on search ajax request to filter. 
+3. search on more fields will add filter results further. 
+4. on search itself, options of delete, inverse and group will be visible/ active. 
+5. checkbox added before each response so they are selected and deleted or addded to group. 
+5. can see groups option on top which will essentially store the search query only. 
+6. aditional fields of send email( first field ) with any number of unseen replies. 
+7. replies conversations at the end.
+on the vertical view, same.
+8. An option of seeing all the replies from of the form as a mailbox and select among them for particular words and been able to connect with the history of the replies. 
+9. option of deleting replies from here as well. 
+10. mark as seen or unseen from here as well. 
+11. user can be sent a link to send the reply back and send the message to him as well. 
+12. email field is the mandatory field as it helps to communicate. 
+
+
+- fade in fadeout when ajax search is retrieved. 
+- consider using ajax to display all the new messages that are been recieved. Search results should be merged with that. Ajax should return searched fields only when something is searched and vice versa. 
+
+under consideration:
+option to send email : individual option at the first page. 
+name and email are mandatory fields for display on the vertical page.
+can add header for email .
+option of selecting emails that are responded and unresponded. 
+at the time of responding the email if the response has been deleted then user should be notified and an email should be sent to fill up the resp again  if the form is active.
+form creator can select if the form is active for responses or no.
+
+- form creator can add reciepients from form page and send them all at once.  may be can also manage how many responded bk. 
+- one email can be sent to multiple people, option of sending to all form repliers or from group or few selected. different emails will be repesented by different pics to identify all the people same email has been sent to. 
+- option to delete all similar imaged email responses. 
+- option to add a field on your own to the form.
+need to maintain images so that at least 50 email responses can be handled. 
+
+- left off at:
+adding reciepients... code written for xml space... now the modal for adding reciepient to be created and value to be transferred there. 
+
+we need list of reciepients when sending the emails. 
+reciepient list will increase on number of people replying either directly or through an ad
+.
+source added as own in the reciepients xml if they have been added nually. 
+
+new stories:
+1. user should be able to either create forms or letters which are to be sent to all. 
+2. from the responses page, user should be able to select all responses and add people to reciepients list.
+
+last work :
+mailbox:
+1. when sent is clicked. show three boxes . one for sent message list. click on which opens the message in detail on the side. 
+click on view replies to see the replies list on the side. 
+click on a reply to to see the reply in detail on the side. At this time screen space will be divided in four parts. 
+
+ 
+- remove check box buttons from the responses and add a delete button.- 
+- remove mailbox and add option to send mesage and see its replies. delete them and reply to them. reply as a new email will be seen. 
+- new replies will be listed near delete button . 
+- send message allows to send message only from current list of responders. it is not an email service.  but you can create it as an email sending form and take it from there. 
+- add reciepients are used only at the time of sending forms fill requests. 
+- global credentials add theme color and also, global receps. every form will have option of importing reciepients from other forms or global receps. 
+response header length will depend on highest number of colums between all responses. user email header will be added on top for this. 
+handle email responses for multiple response to an email. add response 
+- display 20 responses on one page.use pagination and next prev like gmail.
+-check box for selection and a select all option.
+tomoro implement sending recievin email and reply and froward of the email. new response notif. 
+- while sending emails to receps , use exception handling to catch errors when an email is not sent to notify to user.
+- remove add field option from responses .php
+- work on ui of project
+  no custom scroll bars. but, buttons... click and hold on which will keep scrolling. using set and clear intervals. 
+- theme creation for form display.(provide options for all colors. no gloabal for this. )
+- after all this... simple error handling for all windows like if field is empty or input is invalid. 
+- collapsing form options for form create. 
+- then polish the whole UI style elems. 
+
+- try making waiting icon or in progress bars using the same fade messages. for email sending and other ops like resending email, to give user feedback of what is going on. 
+
+
+left at : checkbox selection.
+work on deletion and folder creation of checked data. 
+also, open images and video , docs audio files which have been submitted. 
+work on email all. 
+
+other things to do:
+1. theme set. 2. collapsing of the main form page. 
+3. global credentials will be automatically loaded in the form page, and user can change it and thta will be easier to do. 
+
+next to do:
+delete audio and video fields. 
+work on sending email to all receps. 
+segregate all the various options into various groups.
+work on theme shade
+
+then work on user interface and make it look better. 
+may be better color choices and hover effects everywhere to make it attractive. 
+testing for options and better exp creation. 
+
+later : work on help part of the project. quickly set it up and make it happen. First page with help. 
+
+remaining :
+send email to multiple receps. 
+vertical shoud be shown properly. 
+text choice for field creation amend. 

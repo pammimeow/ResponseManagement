@@ -1,0 +1,15 @@
+on responses page:
+done is:
+search is happening except for check box search. 
+rectify when no responses are submitted, the display is not nice. 
+rectify, when search is not proper. display not right. 
+
+next time :
+creation of folders and its listing. create a var to save the newly added params and newly added params var value to be stored for that folder. thats what has to be done with new folder creation. 
+
+to be done:
+check boxes unselected after ajax reload. 
+
+later:
+the UI of the whole page to be improved. 
+delete button to be made functional on check box select or search. 

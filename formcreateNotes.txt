@@ -1,0 +1,76 @@
+things to do in :
+formcreate.php.
+
+1. create step sections for all the steps.
+2. Add help icons for all. 
+3. add erro checking for all. 
+4. add an option to simply send an email instead of form to all reciepients. 
+5. add option to send email or form link to all the reciepients. 
+6. solve all the errors in the functionality.
+7. add option to add 
+company name, logo and tagline at the top and be able to edit and delete it. 
+8. display of the all form names properly on left hand side. ( also put an option to edit personal info, includes global values for formname, comp logo and tagline)
+9. make the your url link proper. 
+10. make user folders and operate on uploading files properly. 
+11. error checking on file uploads and making them essential in the response submit page. 
+
+Okay :
+error for adding fields when form name is not saved. 
+handling:
+Add expanding controls to each section. sections will not open if formname is not saved. essentially, $_SESSION['new'] should be set. 
+
+user folders:
+1. company logo file.(referecne will go in the formelems. 
+2. user uploads for the form responses will also go here. folders for images , videos and docs. 
+
+edit the form fields. 
+1. field name editable. 
+2. essential or unique editable. 
+3. the option vals to be deleted or editable.
+
+add regular expressions for the fields:(common to all, add a reg exp)
+1. for strings : starts with ends with and length
+add personal reg exp.
+2. number : range can be defined. start and end. or length. if range is defined then length is not needed. and add a reg
+3. date : pick up a date range. date between.
+4. radio/check and select boxes dont need a reg exp. 
+5. image field, regulate the types of images added. present an option of mostly available image formats. 
+6. same for video. 
+7. same for docs. 
+9. text desc : length.  (default length to be set. )
+
+- keep an option of collectively selecting fields and deletin them
+- field name should be unique and not blank. 
+- may be put one tag for unique and essential field. 
+
+tomoro:
+-get up and finish the editing part of the fields. 
+-then implement the file uploading part from a diff page. 
+- implement uploading and storing company information. 
+- and based on that create the new look of the form presented to be filled in. 
+- may be use  a color picker to choose the theme color for the form. 
+
+Note :
+option values are not been saved as of now. work on it later 
+theme will require color set for :
+bg1, bg2, bg3
+font 1 , font 2, font3. Otherwise it will take default color vals. 
+
+###
+Companys infor on forms:
+1. on load gloabal. add a text field whcih will show the name of the globallogo file. 
+2. on submit goes to the same filehandle.
+3. follow code alreadt written for credentials. 
+
+for floating tabs:
+1. pass array of objs. 
+2. and wid20 or etc
+
+remains in form create :
+1. adding templates of select box:
+range of numbers
+countries. 
+2. companys info for forms. 
+3. theme addition.
+4. option val editing and deletion. 
+5. regex - standard or custom selection based on what is saved. and click on the other type should give  amessage to user that these values will the be unsaved, 

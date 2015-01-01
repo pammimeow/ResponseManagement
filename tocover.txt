@@ -1,0 +1,19 @@
+overview of the application
+which technologies are used
+the way the files are structured
+focus page and working on that
+
+understanding current style sheet
+check if global credentials is working fine and understand it properly
+XML file structure and xml methods intro
+finding errors on the first page
+goin thru login.php 
+checking script.js and understandin the flow
+
+pages 
+login.php
+script.js
+styless
+form create
+includefunctions
+

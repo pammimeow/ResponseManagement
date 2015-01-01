@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<messages>
+<message1>Company Name name cannot be blank.</message1>
+<message2>File type should be either .jpg, .png or .gif. </message2>
+<message3>File size greater than 5MB is not allowed </message3>
+<message4>Field not Added !!! A field with this name is already present.</message4>
+</messages>
